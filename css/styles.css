@@ -211,6 +211,40 @@ ul {
   flex-basis: calc((100% - 30px * 3) / 4);
 }
 
+/* !!!!! РОБОЧИЙ НЕДОПРАЦЬОВАНИЙ БЛОК !!!!!! */
+.advantage-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.advantage-item:nth-child(1)::before {
+  background-image: url("../svg/antenna.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item:nth-child(2)::before {
+  background-image: url("../svg/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item:nth-child(3)::before {
+  background-image: url("../svg/diagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-item:nth-child(4)::before {
+  background-image: url("../svg/astronaut.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .advantage-title {
   margin-bottom: 10px;
 
