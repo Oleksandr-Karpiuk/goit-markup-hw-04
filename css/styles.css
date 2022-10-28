@@ -285,7 +285,29 @@ ul {
 }
 
 .team-text {
+  margin-bottom: 16px;
   color: var(--secondary-color);
+}
+
+/* РОБОЧА НЕЗАВЕРШЕНА ЧАСТИНА З ПОСИЛАНЬ НА СОЦМЕРЕЖІ КОМАНДИ */
+.icon-list {
+  background-color: #bbbbbb;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  gap: 10px;
+}
+
+.icon-item {
+  flex-basis: calc((100% - 10px * 3) / 4);
+}
+
+.icon-link {
+  outline: 1px dashed red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
 }
 
 /* FOOTER */
