@@ -342,7 +342,7 @@ ul {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--focus-color);
+  border-color: var(--focus-color);
   fill: var(--focus-color);
 }
 
