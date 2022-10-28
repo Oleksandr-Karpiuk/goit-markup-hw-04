@@ -8,6 +8,7 @@
   --black-color: #000000;
   --white-color: #ffffff;
   --address-color: rgba(255, 255, 255, 0.6);
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -343,6 +344,15 @@ ul {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--focus-color);
+}
+
+.icons-focus {
+  fill: var(--icons-color);
+}
+
+.icons-focus:hover,
+.icons-focus:focus {
+  fill: var(--focus-color);
 }
 
 /* FOOTER */
