@@ -43,6 +43,9 @@ ul {
 }
 
 .section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -211,38 +214,15 @@ ul {
   flex-basis: calc((100% - 30px * 3) / 4);
 }
 
-/* !!!!! РОБОЧИЙ НЕДОПРАЦЬОВАНИЙ БЛОК !!!!!! */
-.advantage-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
+.advantage-icons {
+  display: flex;
   margin-bottom: 30px;
-}
+  height: 120px;
+  justify-content: center;
+  align-items: center;
 
-.advantage-item:nth-child(1)::before {
-  background-image: url("../svg/antenna.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage-item:nth-child(2)::before {
-  background-image: url("../svg/clock.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage-item:nth-child(3)::before {
-  background-image: url("../svg/diagram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantage-item:nth-child(4)::before {
-  background-image: url("../svg/astronaut.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: var(--team-bcg-color);
+  border-radius: 4px;
 }
 
 .advantage-title {
@@ -275,7 +255,8 @@ ul {
 
 .job-item:not(:first-child),
 .team-item:not(:first-child),
-.advantage-item:not(:first-child) {
+.advantage-item:not(:first-child),
+.clients-item:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -286,9 +267,6 @@ ul {
 
 /* секція наша команда */
 .team {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--team-bcg-color);
 
   font-size: 16px;
@@ -342,6 +320,29 @@ ul {
   justify-content: center;
   align-items: center;
   height: 44px;
+}
+
+/* секція клієнти */
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 30px * 5) / 6);
+}
+
+.clients-link {
+  display: flex;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--focus-color);
 }
 
 /* FOOTER */
