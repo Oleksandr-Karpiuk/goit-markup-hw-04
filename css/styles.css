@@ -60,6 +60,9 @@ ul {
 }
 
 .page-header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -123,8 +126,18 @@ ul {
 /* MAIN */
 /* головна секція hero */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 
 .hero,
@@ -239,6 +252,9 @@ ul {
 
 /* секція наша команда */
 .team {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--team-bcg-color);
 
   font-size: 16px;
@@ -274,6 +290,9 @@ ul {
 
 /* FOOTER */
 .page-footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -349,6 +368,9 @@ ul {
 .portfolio-button:focus {
   background-color: var(--focus-color);
 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   color: var(--white-color);
 }
 
@@ -360,6 +382,12 @@ ul {
 
 .portfolio-item {
   flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-description {
