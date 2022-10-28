@@ -209,6 +209,7 @@ ul {
 
 .advantage-list {
   display: flex;
+  gap: 30px;
 }
 
 .advantage-item {
@@ -248,17 +249,11 @@ ul {
 
 .job-list {
   display: flex;
+  gap: 30px;
 }
 
 .job-item {
   flex-basis: calc((100% - 30px * 2) / 3);
-}
-
-.job-item:not(:first-child),
-.team-item:not(:first-child),
-.advantage-item:not(:first-child),
-.clients-item:not(:first-child) {
-  margin-left: 30px;
 }
 
 .image {
@@ -277,6 +272,7 @@ ul {
 
 .team-list {
   display: flex;
+  gap: 30px;
 }
 
 .team-item {
@@ -304,7 +300,6 @@ ul {
 
 /* РОБОЧА НЕЗАВЕРШЕНА ЧАСТИНА З ПОСИЛАНЬ НА СОЦМЕРЕЖІ КОМАНДИ */
 .icon-list {
-  background-color: #bbbbbb;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -313,37 +308,48 @@ ul {
 }
 
 .icon-link {
-  outline: 1px dashed red;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--focus-color);
+  color: var(--white-color);
 }
 
 /* секція клієнти */
 .clients-list {
   display: flex;
-}
-
-.clients-item {
-  flex-basis: calc((100% - 30px * 5) / 6);
+  gap: 30px;
 }
 
 .clients-link {
   display: flex;
+  width: 170px;
   height: 92px;
   justify-content: center;
   align-items: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  fill: var(--icons-color);
+
+  color: var(--icons-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--focus-color);
-  fill: var(--focus-color);
+  color: var(--focus-color);
+}
+
+.icons {
+  fill: currentColor;
 }
 
 /* FOOTER */
