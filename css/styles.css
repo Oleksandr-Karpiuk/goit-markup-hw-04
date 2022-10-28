@@ -306,13 +306,10 @@ ul {
 .icon-list {
   background-color: #bbbbbb;
   display: flex;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 10px;
-}
-
-.icon-item {
-  flex-basis: calc((100% - 10px * 3) / 4);
 }
 
 .icon-link {
@@ -320,6 +317,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 44px;
   height: 44px;
 }
 
