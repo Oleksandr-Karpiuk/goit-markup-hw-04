@@ -337,19 +337,12 @@ ul {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: var(--icons-color);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--focus-color);
-}
-
-.icons-focus {
-  fill: var(--icons-color);
-}
-
-.icons-focus:hover,
-.icons-focus:focus {
   fill: var(--focus-color);
 }
 
