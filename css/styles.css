@@ -233,8 +233,7 @@ ul {
   border-radius: 4px;
 }
 
-.advantage-title,
-.footer-title {
+.advantage-title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -400,15 +399,16 @@ ul {
 /* FOOTER іконки з посиланнями на соцмережі */
 .footer-flex {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
-.second-block {
-  padding-top: 12px;
-}
-
 .footer-title {
+  display: block;
   margin-bottom: 20px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--white-color);
 }
 
