@@ -59,7 +59,8 @@ ul {
 .page-header .container,
 .page-nav,
 .header-list,
-.page-contacts {
+.page-contacts,
+.contacts {
   display: flex;
 }
 
@@ -101,7 +102,8 @@ ul {
 
 .link,
 .link-contacts {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -114,6 +116,10 @@ ul {
 
 .link-contacts {
   color: var(--secondary-color);
+}
+
+.link-contacts > .icons {
+  margin-right: 10px;
 }
 
 .link:hover,
@@ -227,11 +233,13 @@ ul {
   border-radius: 4px;
 }
 
-.advantage-title {
+.advantage-title,
+.footer-title {
   margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .advantage-text {
@@ -298,7 +306,7 @@ ul {
   color: var(--secondary-color);
 }
 
-/* РОБОЧА НЕЗАВЕРШЕНА ЧАСТИНА З ПОСИЛАНЬ НА СОЦМЕРЕЖІ КОМАНДИ */
+/* ЧАСТИНА З ПОСИЛАНЬ НА СОЦМЕРЕЖІ КОМАНДИ */
 .icon-list {
   display: flex;
   justify-content: center;
@@ -323,7 +331,7 @@ ul {
   color: var(--white-color);
 }
 
-/* секція клієнти */
+/* Cекція клієнти */
 .clients-list {
   display: flex;
   gap: 30px;
@@ -387,6 +395,46 @@ ul {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--focus-color);
+}
+
+/* FOOTER іконки з посиланнями на соцмережі */
+.footer-flex {
+  display: flex;
+  gap: 70px;
+}
+
+.second-block {
+  padding-top: 12px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+
+.icon-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--focus-color);
+}
+
+.footer-icons {
+  fill: currentColor;
 }
 
 /* PORTFOLIO.HTML MAIN */
